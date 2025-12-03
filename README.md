@@ -18,7 +18,7 @@ git clone https://github.com/Mastermine-NPC/Web-project.git
 cd Web-project/html
 start index.html
 
-# 🏠 DecoreHome - Proyecto Web
+#  DecoreHome - Proyecto Web
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Mastermine-NPC/Web-project?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Mastermine-NPC/Web-project?style=flat-square)
@@ -40,7 +40,7 @@ start index.html
 
 ---
 
-## 📖 Descripción
+##  Descripción
 DecoreHome permite:
 
 - Registro y gestión de usuarios.
@@ -52,7 +52,7 @@ DecoreHome permite:
 
 ---
 
-## 💻 Tecnologías
+##  Tecnologías
 | Tecnología | Badge |
 |------------|-------|
 | HTML5      | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) |
@@ -62,7 +62,7 @@ DecoreHome permite:
 
 ---
 
-## 🗂 Estructura del Proyecto
+##  Estructura del Proyecto
 <details>
 <summary>Desplegar estructura</summary>
 
