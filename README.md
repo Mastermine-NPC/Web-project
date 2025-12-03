@@ -10,10 +10,16 @@ HTML5
 CSS3 (con diseño responsivo)
 JavaScript (manipulación del DOM y almacenamiento local con localStorage)
 Font Awesome (íconos)
-# Para ver la pagina
+# Para ver la pagina visita la siguiente URL
 ```bash
 https://mastermine-npc.github.io/Web-project/html/index.html
 ```
+# Para clonar la pagina
+```bash
+git clone https://mastermine-npc.github.io/Web-project
+```
+
+
 # Entrar a la carpeta del proyecto
 ```bash 
 cd Web-project
