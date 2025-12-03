@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Activos</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    form, #producto-filtros { margin-bottom: 20px; }
+    input, select, button { margin: 5px; padding: 5px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background: #f0f0f0; }
+  </style>
+</head>
+<body>
+  <h1>Gestión de Productos</h1>
+
+  <!-- Formulario para insertar/editar -->
+  <form id="producto-form">
+    <input type="text" id="p-nombre" placeholder="Nombre" required>
+    <input type="number" id="p-precio" placeholder="Precio" step="0.01" required>
+    <input type="text" id="p-categoria" placeholder="Categoría" required>
+    <input type="text" id="p-proveedor" placeholder="ProveedorId" required>
+    <button type="submit">Guardar</button>
+    <button type="button" id="p-eliminar">Eliminar</button>
+  </form>
+
+  <!-- Filtros y orden -->
+  <div id="producto-filtros">
+    <input type="text" id="p-buscar" placeholder="Buscar por nombre/categoría">
+    <select id="p-orden">
+      <option value="nombre:asc">Nombre ↑</option>
+      <option value="nombre:desc">Nombre ↓</option>
+      <option value="precio:asc">Precio ↑</option>
+      <option value="precio:desc">Precio ↓</option>
+      <option value="categoria:asc">Categoría ↑</option>
+      <option value="categoria:desc">Categoría ↓</option>
+    </select>
+    <button id="p-aplicar">Aplicar filtros</button>
+  </div>
+
+  <!-- Tabla de productos -->
+  <table id="productos-table">
+    <thead>
+      <tr>
+        <th>ID</th><th>Nombre</th><th>Precio</th><th>Categoría</th><th>Proveedor</th><th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- Aquí cargas tu main.js -->
+  <script src="main.js"></script>
+</body>
+</html>

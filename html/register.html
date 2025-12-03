@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Mi Sitio</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- tu CSS principal -->
+    <link rel="stylesheet" href="../img/icons/css/all.min.css"> <!-- FontAwesome (local) -->
+</head>
+<body class="register-font">
+
+    <!-- Header -->
+    <header>
+        <div class="logo"><i class="fa-solid fa-shield-halved"></i> MiSitio</div>
+        <nav>
+           <button class="nav-btn" onclick="window.location.href='index.html'">
+                <i class="fa-solid fa-house"></i> Inicio
+            </button>
+        </nav>
+    </header>
+
+    <!-- Sección de Registro -->
+    <section class="login-section">
+        <div class="login-container">
+            <h2><i class="fa-solid fa-user-plus"></i> Crear Cuenta</h2>
+            <p class="login-subtitle">Únete y disfruta de nuestros servicios</p>
+
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="username"><i class="fa-solid fa-user"></i> Usuario</label>
+                    <input type="text" id="username" name="username" required placeholder="Ingresa tu usuario">
+                </div>
+
+                <div class="input-group">
+                    <label for="email"><i class="fa-solid fa-envelope"></i> Correo</label>
+                    <input type="email" id="email" name="email" required placeholder="Ingresa tu correo">
+                </div>
+
+                <div class="input-group">
+                    <label for="password"><i class="fa-solid fa-lock"></i> Contraseña</label>
+                    <input type="password" id="password" name="password" required placeholder="Crea una contraseña">
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password"><i class="fa-solid fa-lock"></i> Confirmar Contraseña</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Repite tu contraseña">
+                </div>
+                <button type="submit" class="btn-login">
+                    <i class="fa-solid fa-user-check"></i> Registrarse
+                </button>
+
+
+                <p class="register-text">
+                    ¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a>
+                </p>
+                
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p><i class="fa-solid fa-envelope icon"></i> correo@ejemplo.com</p>
+                <p><i class="fa-solid fa-phone icon"></i> +51 987 654 321</p>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 MiSitio - Todos los derechos reservados
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

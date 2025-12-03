@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Pedidos | DecoreHome</title>
+    <link rel="stylesheet" href="../img/icons/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="window" />
+</head>
+<body>
+    <header>
+        <h1 class="logo">DecoreHome</h1>
+        <nav>
+            <button class="nav-btn" onclick="window.location.href='index.html'"><i class="fa-solid fa-house"></i> Inicio</button>
+            <button class="nav-btn" onclick="window.location.href='nosotros.html'"><i class="fa-solid fa-users"></i> Quiénes somos</button>
+            <button class="nav-btn" onclick="window.location.href='productos.html'"><i class="fa-solid fa-cart-shopping"></i> Productos</button>
+            <button class="nav-btn" onclick="window.location.href='contactos.html'"><i class="fa-solid fa-envelope"></i> Contáctenos</button>
+            <button class="nav-btn" onclick="window.location.href='blog.html'"><i class="fa-solid fa-blog"></i> Blog</button>
+            <button class="nav-btn login-nav" onclick="window.location.href='login.html'"><i class="fa-solid fa-user"></i> Iniciar Sesión</button>
+        </nav>
+    </header>
+
+    <main class="pedidos-main">
+        <section class="hero-main">
+            <div class="hero-content">
+                <h1 class="hero-title">Mis Pedidos</h1>
+                <p class="hero-subtitle">Revisa el estado de tus compras y pedidos realizados</p>
+            </div>
+        </section>
+
+        <section class="pedidos-container">
+            <h2>Historial de Pedidos</h2>
+            <div id="pedidos-list">
+                <!-- Pedidos se cargarán dinámicamente -->
+                <div class="pedido-card">
+                    <h3>Pedido #001</h3>
+                    <p><strong>Fecha:</strong> 2024-10-01</p>
+                    <p><strong>Estado:</strong> En proceso</p>
+                    <p><strong>Total:</strong> S/ 150.00</p>
+                    <button class="cta-button small">Ver Detalles</button>
+                </div>
+                <div class="pedido-card">
+                    <h3>Pedido #002</h3>
+                    <p><strong>Fecha:</strong> 2024-09-15</p>
+                    <p><strong>Estado:</strong> Entregado</p>
+                    <p><strong>Total:</strong> S/ 200.00</p>
+                    <button class="cta-button small">Ver Detalles</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p><i class="fa-solid fa-phone"></i> +123 456 789</p>
+                <p><i class="fa-solid fa-envelope"></i> info@decorehome.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Horario</h4>
+                <p>Lun - Vie: 9:00 - 18:00</p>
+                <p>Sáb: 10:00 - 14:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 DecoreHome - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

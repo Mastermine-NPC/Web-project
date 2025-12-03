@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclamos | DecoreHome</title>
+    <link rel="stylesheet" href="../img/icons/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="window" />
+</head>
+<body>
+    <header>
+        <h1 class="logo">DecoreHome</h1>
+        <nav>
+            <button class="nav-btn" onclick="window.location.href='index.html'"><i class="fa-solid fa-house"></i> Inicio</button>
+            <button class="nav-btn" onclick="window.location.href='nosotros.html'"><i class="fa-solid fa-users"></i> Quiénes somos</button>
+            <button class="nav-btn" onclick="window.location.href='productos.html'"><i class="fa-solid fa-cart-shopping"></i> Productos</button>
+            <button class="nav-btn" onclick="window.location.href='contactos.html'"><i class="fa-solid fa-envelope"></i> Contáctenos</button>
+            <button class="nav-btn" onclick="window.location.href='blog.html'"><i class="fa-solid fa-blog"></i> Blog</button>
+            <button class="nav-btn login-nav" onclick="window.location.href='login.html'"><i class="fa-solid fa-user"></i> Iniciar Sesión</button>
+        </nav>
+    </header>
+
+    <main class="reclamos-main">
+        <section class="hero-main">
+            <div class="hero-content">
+                <h1 class="hero-title">Libro de Reclamos</h1>
+                <p class="hero-subtitle">Tu opinión es importante. Envíanos tus comentarios o reclamos</p>
+            </div>
+        </section>
+
+        <section class="reclamos-container">
+            <div class="reclamos-info">
+                <h2>Información sobre Reclamos</h2>
+                <p>En DecoreHome valoramos tu experiencia. Si tienes algún inconveniente con nuestros productos o servicios, por favor, completa el formulario a continuación. Nos comprometemos a responder en un plazo máximo de 48 horas.</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Reclamos sobre productos defectuosos</li>
+                    <li><i class="fa-solid fa-check"></i> Problemas con entregas</li>
+                    <li><i class="fa-solid fa-check"></i> Sugerencias y comentarios</li>
+                    <li><i class="fa-solid fa-check"></i> Consultas sobre pedidos</li>
+                </ul>
+            </div>
+
+            <form class="reclamos-form">
+                <h2>Formulario de Reclamo</h2>
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="text" placeholder="Número de pedido (opcional)">
+                <select required>
+                    <option value="">Tipo de reclamo</option>
+                    <option value="producto">Producto defectuoso</option>
+                    <option value="entrega">Problema de entrega</option>
+                    <option value="servicio">Servicio al cliente</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <textarea rows="5" placeholder="Describe tu reclamo o comentario..." required></textarea>
+                <button type="submit" class="cta-button"><i class="fa-solid fa-paper-plane"></i> Enviar Reclamo</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p><i class="fa-solid fa-phone"></i> +123 456 789</p>
+                <p><i class="fa-solid fa-envelope"></i> info@decorehome.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Horario</h4>
+                <p>Lun - Vie: 9:00 - 18:00</p>
+                <p>Sáb: 10:00 - 14:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 DecoreHome - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - DecoreHome</title>
+    <!-- Reutiliza style.css (local) -->
+    <link rel="stylesheet" href="../css/style.css" />
+     <link rel="stylesheet" href="../img/icons/css/all.min.css">
+     <link rel="icon" type="image/png" href="window" />
+</head>
+<body class="register-font">
+    <header>
+        <h1 class="logo">DecoreHome</h1>
+        <nav>
+            <button class="nav-btn" onclick="window.location.href='index.html'"><i class="fa-solid fa-house"></i> Inicio</button>
+            <button class="nav-btn" onclick="window.location.href='nosotros.html'"><i class="fa-solid fa-users"></i> Quiénes somos</button>
+            <button class="nav-btn" onclick="window.location.href='productos.html'"><i class="fa-solid fa-cart-shopping"></i> Productos</button>
+            <button class="nav-btn active" onclick="window.location.href='contactos.html'"><i class="fa-solid fa-envelope"></i> Contáctenos</button>
+            <button class="nav-btn" onclick="window.location.href='blog.html'"><i class="fa-solid fa-blog"></i> Blog</button>
+            <button class="nav-btn login-nav" onclick="window.location.href='login.html'"><i class="fa-solid fa-user"></i> Iniciar Sesión</button>
+            <button class="nav-btn login-nav" onclick="window.location.href='carrito.html'"><i class="fa-solid fa-basket-shopping"></i> Ver carrito</button>
+            
+
+
+
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero" style="margin-top:100px;">
+            <h2>Catálogo de Productos</h2>
+            <p>Encuentra piezas para decorar tu hogar con estilo y calidad.</p>
+        </section>
+
+        <section style="padding: 30px 0;">
+            <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:18px;">
+                <input id="searchInput" type="search" placeholder="Buscar producto por nombre..."/>
+                <select id="categoryFilter" style="padding:10px;border-radius:8px;border:1px solid #ccc;background-color: transparent;">
+                    <option value="all">Todas las categorías</option>
+                </select>
+                <select id="sortSelect" style="padding:10px;border-radius:8px;border:1px solid #ccc;background-color: transparent;">
+                    <option value="default">Orden</option>
+                    <option value="price-asc">Precio: menor a mayor</option>
+                    <option value="price-desc">Precio: mayor a menor</option>
+                </select>
+            </div>
+
+            <div id="productsGrid" class="services-grid"></div>
+        </section>
+    </main>
+    <!-- Modal del carrito -->
+    <div id="cartModal" class="modal hidden">
+        <div class="modal-content"></div>
+    </div>
+
+    <footer style="margin-top:40px;">
+        <p style="text-align:center;color:#fff;padding:20px 0;">© 2024 DecoreHome - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

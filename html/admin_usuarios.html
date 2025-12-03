@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - DecoreHome</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../img/icons/css/all.min.css">
+    <link rel="icon" type="image/png" href="window" />
+</head>
+
+<body class="register-font">
+
+<header>
+    <h1 class="logo">DecoreHome</h1>
+    <nav>
+        <button class="nav-btn" onclick="window.location.href='index.html'"><i class="fa-solid fa-house"></i> Inicio</button>
+        <button class="nav-btn" onclick="window.location.href='admin.html'"><i class="fa-solid fa-gauge"></i> Admin Panel</button>
+        <button class="nav-btn login-nav" onclick="logout()"><i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión</button>
+    </nav>
+</header>
+
+<main class="container" style="margin-top:120px;">
+
+    <section class="hero">
+        <h2><i class="fa-solid fa-gauge"></i> Panel de Administración</h2>
+        <p>Gestiona usuarios registrados en el sistema.</p>
+    </section>
+
+    <section style="padding: 30px 0;">
+
+        <div style="margin-bottom:20px;">
+            <button onclick="addUserPrompt()" class="nav-btn" style="background:#38bcec;">
+                <i class="fa-solid fa-user-plus"></i> Agregar Usuario
+            </button>
+        </div>
+
+        <table id="usersTable" class="cart-table" style="width:100%;">
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Email</th>
+                    <th>Rol</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    </section>
+
+</main>
+
+<footer style="margin-top:40px;">
+    <p style="text-align:center;color:#fff;padding:20px 0;">© 2024 DecoreHome - Todos los derechos reservados</p>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Renderiza la tabla de usuarios
+        renderUsers();
+    });
+
+    function addUserPrompt() {
+        const username = prompt("Nombre de usuario:");
+        const email = prompt("Correo electrónico:");
+        const password = prompt("Contraseña:");
+        const role = prompt("Rol (admin/user):", "user");
+
+        if (!username || !email || !password) {
+            alert("Todos los campos son obligatorios.");
+            return;
+        }
+
+        const result = userManager.addUser(username, email, password, role);
+        alert(result.msg);
+        renderUsers();
+    }
+</script>
+
+</body>
+</html>
